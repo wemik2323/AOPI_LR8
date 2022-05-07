@@ -9,5 +9,5 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     -fsanitize=address,undefined)
 
 target_compile_options(${PROJECT_NAME} PUBLIC
-    -Wall -Wextra -Wpedantic
+    -Wall -Wextra -Wpedantic -Wconversion -Werror
     -fsanitize=address,undefined)
