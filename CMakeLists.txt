@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.23.1)
+cmake_minimum_required(VERSION 3.23.0)
 
 project(LR08 LANGUAGES C)
 
