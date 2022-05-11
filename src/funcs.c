@@ -21,7 +21,7 @@ void emul(char *alphabet, char *string, int carriage_pos, int num_of_states,
         while (symbol != alphabet[symbol_index]) ++symbol_index;
         char *instruction = table[symbol_index * num_of_states + state - 1];
 
-        // выполнение сожержимого клекти
+        // выполнение содержимого клетки
         string[carriage_pos] = instruction[0];
         if (instruction[1] == '>')
             ++carriage_pos;
