@@ -1,13 +1,15 @@
 cmake_minimum_required(VERSION 3.23.0)
 
-project(LR08 LANGUAGES C)
+project(CURSE LANGUAGES C)
 
 add_executable(${PROJECT_NAME} 
-    src/main.c)
+    src/main.c
+    src/funcs.c)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
-    -fsanitize=address,undefined)
+    -fsanitize=address,undefined -lm)
 
 target_compile_options(${PROJECT_NAME} PUBLIC
-    -Wall -Wextra -Wpedantic -Wconversion -Werror
+    -Werror
+    -Wall -Wextra -Wpedantic -Wconversion
     -fsanitize=address,undefined)
